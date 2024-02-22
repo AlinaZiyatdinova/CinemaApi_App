@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    android:src="@drawable/icon_1">
+</ImageView>
+    <TextView
+        android:id="@+id/titleee"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/title_namemovie"
+        android:textSize="20dp"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp">
+    </TextView>
+    <EditText
+        android:id="@+id/edittext_namemovie"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:background="@drawable/background_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </EditText>
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/background_view"
+        android:text="@string/textbutton_search">
+
+    </Button>
+    <ImageView
+        android:id="@+id/image_poster"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+    </ImageView>
+
+    <ListView
+        android:id="@+id/listview_plot"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/title_plot"
+        android:textSize="20dp" />
+
+    <Button
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background_view"
+        android:text="@string/next_page_bd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="nextpage"></Button>
+</LinearLayout>
